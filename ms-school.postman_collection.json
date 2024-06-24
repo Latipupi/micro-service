@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "cd0c8136-0ec7-4275-b543-72b8a1912498",
+		"name": "ms-school",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4439064",
+		"_collection_link": "https://restless-station-487713.postman.co/workspace/microservice~349d98d5-e67a-4244-a53f-3b021562d3ac/collection/4439064-cd0c8136-0ec7-4275-b543-72b8a1912498?action=share&source=collection_link&creator=4439064"
+	},
+	"item": [
+		{
+			"name": "Create School",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"schoolName\" : \"Alexandria Scholl\",\r\n    \"location\" : \"Jakarta\",\r\n    \"principalName\" : \"Mr Fahriz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update School",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"schoolName\": \"SMK MJPS 1 TASIKMALAYA\",\r\n        \"location\": \"Tasikmalaya\",\r\n        \"principalName\": \"Mis Neni\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get School",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get School By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/school/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete School",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/school/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"school",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
